@@ -1,0 +1,151 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.painel {
+  width: 90%;
+  max-width: 680px;
+  margin: 60px auto;
+  padding: 35px;
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(30, 80, 140, 0.15);
+}
+
+.painel h1 {
+  margin: 0 0 10px;
+  text-align: center;
+  color: #174a7e;
+  font-size: 32px;
+}
+
+.painel > p {
+  margin-bottom: 30px;
+  text-align: center;
+  color: #66788a;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+form input {
+  flex: 1;
+  padding: 13px 15px;
+  border: 2px solid #cbd9e8;
+  border-radius: 10px;
+  outline: none;
+  font-size: 16px;
+  color: #26384a;
+  background: #f8fbff;
+}
+
+form input:focus {
+  border-color: #3182ce;
+}
+
+form button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #2878c8;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #1f66ad;
+}
+
+.erro {
+  margin: 10px 0;
+  color: #c0392b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.ideia {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border: 1px solid #d8e4ef;
+  border-radius: 10px;
+  background: #f5f9fd;
+}
+
+.ideia:hover {
+  background: #edf5fc;
+}
+
+.ideia input {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.ideia span {
+  flex: 1;
+  color: #34495e;
+  font-size: 16px;
+}
+
+.feita {
+  text-decoration: line-through;
+  color: #8a9aaa !important;
+}
+
+.ideia button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 8px;
+  background: #5b9bd5;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.ideia button:hover {
+  background: #397fb9;
+}
+
+footer {
+  margin-top: 25px;
+  padding-top: 18px;
+  border-top: 1px solid #dce6ef;
+  text-align: center;
+  color: #60758a;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .painel {
+    width: 94%;
+    padding: 25px;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  form button {
+    width: 100%;
+  }
+}
